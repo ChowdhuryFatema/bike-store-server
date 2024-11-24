@@ -34,6 +34,7 @@ The **Bike Store Backend** is a server-side application built using **Node.js**,
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/ChowdhuryFatema/bike-store-server.git
    cd bike-store-server
@@ -41,34 +42,36 @@ The **Bike Store Backend** is a server-side application built using **Node.js**,
    ```
 
 2. Install dependencies:
-```bash
-npm install
-```
 
+   ```bash
+   npm install
+   ```
 
 3. Create a .env file in the root directory and configure the following variables:
 
-```bash
-NODE_ENV=
-PORT=
-DATABASE_URL=
-```
+   ```bash
+   NODE_ENV=
+   PORT=
+   DATABASE_URL=
+   ```
 
 4. Build the project:
 
-```bash
-npm run build
-```
+   ```bash
+   npm run build
+   ```
 
 5. Start the development server:
-```bash
-npm run start:dev
-```
+
+   ```bash
+   npm run start:dev
+   ```
 
 6. Start the production server:
-```bash
-npm run start
-```
+
+   ```bash
+   npm run start
+   ```
 
 API Endpoints
 Bike Endpoints
