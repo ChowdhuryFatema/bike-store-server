@@ -13,7 +13,7 @@ const createOrder = async (req: Request, res: Response, next: NextFunction) => {
       data: result,
     });
   } catch (error) {
-    next(error)
+    next(error);
   }
 };
 
@@ -24,11 +24,11 @@ const getRevenue = async (req: Request, res: Response, next: NextFunction) => {
       message: 'Revenue calculated successfully',
       success: true,
       data: {
-        totalRevenue: result
+        totalRevenue: result,
       },
     });
   } catch (error) {
-    next(error)
+    next(error);
   }
 };
 export const OrderController = {
