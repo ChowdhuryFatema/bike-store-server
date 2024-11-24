@@ -1,17 +1,12 @@
 import Product from '../product/product.model';
 import { IOrder } from './order.interface';
 import Order from './order.model';
-import mongoose from 'mongoose';
 
 const createOrder = async (
   payload: IOrder,
   productId: string,
   quantity: number,
 ) => {
-  // Validate productId format
-  if (!mongoose.Types.ObjectId.isValid(productId)) {
-    throw new Error('Invalid product ID');
-  }
 
   // Fetch the product from the database
   const orderedProduct = await Product.findById(productId);

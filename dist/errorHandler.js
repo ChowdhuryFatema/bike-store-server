@@ -28,10 +28,7 @@ const errorHandler = (err, req, res, next) => {
                 name: err.name,
                 errors: formattedErrors,
             },
-            stack: process.env.NODE_ENV !== 'production' ||
-                process.env.INCLUDE_STACK === 'true'
-                ? err.stack
-                : undefined,
+            stack: process.env.NODE_ENV !== 'production' || process.env.INCLUDE_STACK === 'true' ? err.stack : undefined,
         });
         return;
     }
@@ -40,10 +37,7 @@ const errorHandler = (err, req, res, next) => {
         message: err.message || 'An internal server error occurred',
         success: false,
         error: err.message || 'Unknown error',
-        stack: process.env.NODE_ENV !== 'production' ||
-            process.env.INCLUDE_STACK === 'true'
-            ? err.stack
-            : undefined,
+        stack: process.env.NODE_ENV !== 'production' || process.env.INCLUDE_STACK === 'true' ? err.stack : undefined,
     });
     return;
 };

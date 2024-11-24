@@ -15,12 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.OrderService = void 0;
 const product_model_1 = __importDefault(require("../product/product.model"));
 const order_model_1 = __importDefault(require("./order.model"));
-const mongoose_1 = __importDefault(require("mongoose"));
 const createOrder = (payload, productId, quantity) => __awaiter(void 0, void 0, void 0, function* () {
-    // Validate productId format
-    if (!mongoose_1.default.Types.ObjectId.isValid(productId)) {
-        throw new Error('Invalid product ID');
-    }
     // Fetch the product from the database
     const orderedProduct = yield product_model_1.default.findById(productId);
     // Check if the product exists
