@@ -40,20 +40,35 @@ The **Bike Store Backend** is a server-side application built using **Node.js**,
    Install dependencies:
    ```
 
+2. Install dependencies:
+```bash
 npm install
+```
 
-Create a .env file in the root directory and configure the following variables:
 
-env
--NODE_ENV=
--PORT=
--DATABASE_URL=
+3. Create a .env file in the root directory and configure the following variables:
 
-npm run start:build
-Start the development server:
+```bash
+NODE_ENV=
+PORT=
+DATABASE_URL=
+```
 
+4. Build the project:
+
+```bash
+npm run build
+```
+
+5. Start the development server:
+```bash
+npm run start:dev
+```
+
+6. Start the production server:
+```bash
 npm run start
-Start the production server:
+```
 
 API Endpoints
 Bike Endpoints
