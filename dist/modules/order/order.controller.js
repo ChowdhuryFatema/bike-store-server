@@ -34,7 +34,7 @@ const getRevenue = (req, res, next) => __awaiter(void 0, void 0, void 0, functio
             message: 'Revenue calculated successfully',
             success: true,
             data: {
-                totalRevenue: result
+                totalRevenue: result,
             },
         });
     }

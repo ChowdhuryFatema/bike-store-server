@@ -51,6 +51,7 @@ The **Bike Store Backend** is a server-side application built using **Node.js**,
 
    ```bash
    NODE_ENV=
+   INCLUDE_STACK=
    PORT=
    DATABASE_URL=
    ```
